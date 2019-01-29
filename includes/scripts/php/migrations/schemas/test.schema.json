@@ -1,0 +1,35 @@
+{
+  "table_name": "test",
+  "columns": [
+    {
+      "col_name": "id",
+      "col_data_type": "long",
+      "required": true,
+      "auto_increment": true,
+      "primary_key": true
+    },
+    {
+      "col_name": "test_data_1",
+      "col_data_type": "string",
+      "col_data_max": 2000,
+      "unique": true,
+      "required": true
+    },
+    {
+      "col_name": "col_with_fk_ref",
+      "col_data_type": "boolean",
+      "foreign_key": true,
+      "references": "some_other_table",
+      "required": true
+    },
+    {
+      "col_name": "last_column",
+      "col_data_type": "string",
+      "default_value": null,
+      "col_data_max": 300
+    }
+  ],
+  "table_settings":{
+
+  }
+}
