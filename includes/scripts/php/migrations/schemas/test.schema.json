@@ -19,7 +19,10 @@
       "col_name": "col_with_fk_ref",
       "col_data_type": "boolean",
       "foreign_key": true,
-      "references": "some_other_table",
+      "references": {
+        "referanceTable": "some_other_table",
+        "referenceColumn": "myIdColumn"
+      },
       "required": true
     },
     {
